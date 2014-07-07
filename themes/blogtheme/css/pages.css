@@ -1,0 +1,449 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+
+body {
+  background-color: #FFF;
+  color: #222;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+#billboard {
+  background-color: #e8e8e8;
+}
+
+.region-billboard {
+  margin: 0 auto;
+}
+
+#header,
+.region-billboard,
+#page {
+  max-width: 800px;
+}
+
+#page {
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ * See the element-focusable rule in system.base.css.
+ */
+
+#skip-link {
+  margin: 0;
+}
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/*
+ * Header
+ */
+
+/*
+ * Header Morph Colors
+*/
+
+
+.border0 {
+  border-bottom: 4px solid #99e6b3;
+}
+
+.border1 {
+  border-bottom: 4px solid #99e6df;
+}
+
+.border2 {
+  border-bottom: 4px solid #99bfe6;
+}
+
+.border3 {
+  border-bottom: 4px solid #9f99e6;
+}
+
+.border4 {
+  border-bottom: 4px solid #cc99e6;
+}
+
+.border5 {
+  border-bottom: 4px solid #e699d2;
+}
+
+.border6 {
+  border-bottom: 4px solid #e69999;
+}
+
+.border7 {
+  border-bottom: 4px solid #e6c699;
+}
+
+.border8 {
+  border-bottom: 4px solid #d9e699;
+}
+
+.border9 {
+  border-bottom: 4px solid #ace699;
+}
+
+#header-wrapper {
+  background-color: #333;
+  padding: 2em 0;
+}
+
+#header {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#logo { /* Wrapping link for logo */
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+#logo img {
+  vertical-align: bottom;
+}
+
+#name-and-slogan { /* Wrapper for website name and slogan */
+  float: left;
+}
+
+#site-name { /* The name of the website */
+  display: inline-block;
+  margin: 0;
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+#site-name a:link,
+#site-name a:visited {
+  /*color: #fff;*/
+  text-decoration: none;
+}
+#site-name a:hover,
+#site-name a:focus {
+  /*color: #fff;*/
+  text-decoration: none;
+}
+
+#site-slogan { /* The slogan (or tagline) of a website */
+  display: inline-block;
+  margin: 0;
+  font-size: 1em;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin-left: -16px;
+}
+
+.region-header { /* Wrapper for any blocks placed in the header region */
+ /* Clear the logo */
+}
+
+.region-header ul.menu {
+  display: inline-block;
+  padding: 1em 0 0;
+  margin: 0;
+  height: 1em;
+}
+
+.region-header ul.menu li {
+  display: inline-block;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.region-header ul.menu li a:link {
+  font-size: 1.3em;
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+.region-header ul.menu li a:active,
+.region-header ul.menu li a:hover {
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
+
+.tell2 {
+  margin: 10px 10px 0;
+  padding: 2px 20px;
+}
+
+.tell-active {
+  background-color: #222;
+  margin: 10px 10px 0;
+  padding: 2px 20px;
+}
+
+/*
+ * Main (container for everything else)
+ */
+
+#main {
+  padding-top: 0;
+}
+
+/*
+ * Content
+ */
+
+.front .view-header {
+  font-size: 1.2em;
+  padding: 0 1.5em 2em;
+}
+
+.front .views-row-1 .node-promoted{
+  border-top: none;
+}
+
+#content {
+}
+
+#content p > a:link,
+#content p > a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+#content p > a:hover {
+  border-bottom: 1px dashed #222;
+  color: #222;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #222;
+}
+
+code {
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  color: #222;
+  display: block;
+  font-size: 0.67em;
+  padding: 1em;
+  overflow: auto;
+  width: auto;
+}
+
+code.inline {
+  padding: 0;
+  margin: 0;
+}
+
+.region-highlighted {
+}
+
+.breadcrumb { /* The path to the current page in the form of a list of links */
+  padding: 1.5em 2em 0.5em;
+}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb li {
+  color: #666;
+  font-size: 0.9em;
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 700;
+}
+
+h1.title, /* The title of the page */
+h2.node-title, /* Title of a piece of content when it is given in a list of content */
+h2.block-title, /* Block title */
+h2.title, /* Comment section heading */
+h2.comment-form, /* Comment form heading */
+h3.title { /* Comment title */
+  color: #555;
+  margin: 0;
+}
+
+tr.even { /* Some tables have rows marked even or odd. */
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.status { /* Normal priority messages */
+}
+
+div.warning,
+tr.warning { /* Medium priority messages */
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error { /* High priority messages. See also the .error declaration below. */
+}
+
+.error { /* Errors that are separate from div.messages status messages. */
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning { /* Warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+.tabs { /* See also the tabs.css file. */
+}
+
+.region-help { /* Help text on a page */
+}
+
+.more-help-link { /* Link to more help */
+}
+
+.region-content { /* Wrapper for the actual page content */
+}
+
+ul.inline { /* List of links generated by theme_links() */
+  display: inline;
+  padding: 0;
+}
+ul.inline li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0; /* LTR */
+}
+
+span.field-label { /* The inline field label used by the Fences module */
+  padding: 0 1em 0 0; /* LTR */
+}
+
+.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+  padding: 0;
+}
+.item-list .pager li { /* Each page number in the pager list */
+  padding: 0 0.5em;
+}
+
+.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+}
+
+.more-link { /* Aggregator, blog, and forum more link */
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-first {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+
+.region-sidebar-second {
+}
+
+/*
+ * Footer
+ */
+
+#footer {
+  background-color: #e8e8e8;
+}
+
+#block-block-2 {
+  color: #222;
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/*
+ * Page bottom
+ */
+
+.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+}
+
+
+.color0 {
+  color: #99e6b3;
+}
+
+.color1 {
+  color: #99e6df;
+}
+
+.color2 {
+  color: #99bfe6;
+}
+
+.color3 {
+  color: #9f99e6;
+}
+
+.color4 {
+  color: #cc99e6;
+}
+
+.color5 {
+  color: #e699d2;
+}
+
+.color6 {
+  color: #e69999;
+}
+
+.color7 {
+  color: #e6c699;
+}
+
+.color8 {
+  color: #d9e699;
+}
+
+.color9 {
+  color: #ace699;
+}
